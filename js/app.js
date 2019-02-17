@@ -67,10 +67,10 @@ Player.prototype.update = function(dt) {
  
     }
     
+    // to collect the Stars
     for(let winner of allWinners) {
         if (this.y === winner.y && (winner.x + 50.5 > this.x && winner.x < this.x + 50.5 )) {
         allWinners.splice(winner);
-        collStars.push(winner);
         }
         
     }  
@@ -151,8 +151,6 @@ let winner5 = new Winner(-50,234,50);
 let winner6 = new Winner(10,234,20);
 let winner7 = new Winner(100,151,50);
 const allWinners = [];
-
-const collStars = [];
 
 
 
