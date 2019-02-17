@@ -116,7 +116,7 @@ Player.prototype.handleInput = function(allowedKeys) {
 //
 
 const Winner = function Winner(x,y,speed,sprite) {
-    this.x = x;
+    this.x = x + 101;
     this.y = y;
     this.speed = speed;
     this.sprite = 'images/star.png';
