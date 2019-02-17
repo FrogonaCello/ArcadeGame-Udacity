@@ -63,16 +63,18 @@ Player.prototype.update = function(dt) {
         allWinners.push(winner6);
         allWinners.push(winner7);
         player.x = 190;
-        player.y = 400;
-        
-        for(let winner of allWinners) {
-            if (this.y === winner.y && (winner.x + 50.5 > this.x && winner.x < this.x + 50.5 )) {
+        player.y = 400; 
+ 
+    }
+    
+    for(let winner of allWinners) {
+        if (this.y === winner.y && (winner.x + 50.5 > this.x && winner.x < this.x + 50.5 )) {
             this.x = 190;
             this.y = 400;
-            } // hier stimmt die Bedingung nicht, nochmal anschauen
+        }
         
-        }   
-    }
+    }  
+    
 };
 
 // rendering the player
