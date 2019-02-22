@@ -54,7 +54,7 @@ Player.prototype.update = function(dt) {
         }
     }
 
-    if (player.y <= 50) {
+    if (this.y <= 50) {
         allWinners.push(winner1);
         allWinners.push(winner2);
         allWinners.push(winner3);
@@ -62,8 +62,8 @@ Player.prototype.update = function(dt) {
         allWinners.push(winner5);
         allWinners.push(winner6);
         allWinners.push(winner7);
-        player.x = 190;
-        player.y = 400; 
+        this.x = 190;
+        this.y = 400; 
  
     }
     
